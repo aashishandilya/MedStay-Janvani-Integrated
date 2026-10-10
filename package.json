@@ -1,0 +1,9 @@
+{
+  "name":"medstay-complete",
+  "version":"2.0.0",
+  "private":true,
+  "description":"MedStay full-stack hospital bed discovery and booking platform",
+  "main":"server.js",
+  "scripts":{"start":"node server.js","dev":"node server.js"},
+  "dependencies":{"express":"^5.1.0"}
+}

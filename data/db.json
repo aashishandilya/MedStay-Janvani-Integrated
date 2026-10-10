@@ -1,0 +1,3337 @@
+{
+  "users": [
+    {
+      "id": "u-demo-p",
+      "role": "patient",
+      "name": "Demo Patient",
+      "email": "patient@medstay.demo",
+      "phone": "9999999999",
+      "passwordHash": "d4587ea9ead060c13fd994f21ecfa7926272a78854a2c20136b10a3c9e53e71e"
+    },
+    {
+      "id": "u-demo-o",
+      "role": "owner",
+      "name": "Greenview Admin",
+      "email": "owner@medstay.demo",
+      "phone": "8888888888",
+      "passwordHash": "43a0d17178a9d26c9e0fe9a74b0b45e38d32f27aed887a008a54bf6e033bf7b9",
+      "facilityId": 1
+    },
+    {
+      "id": "u-demo-a",
+      "role": "admin",
+      "name": "MedStay Verification Admin",
+      "email": "admin@medstay.demo",
+      "phone": "9000000000",
+      "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9"
+    },
+    {
+      "id": "37f265d3-ec45-418e-9508-dc61c669ae76",
+      "role": "owner",
+      "name": "kushagra bajpai",
+      "email": "kush@gmail.com",
+      "phone": "8532883687",
+      "passwordHash": "4fccbd99488d0cc83b5a7ec523d2b50d081c8635d791d0ff1279248df5f49cbe"
+    }
+  ],
+  "hospitals": [
+    {
+      "id": 1,
+      "name": "Greenview Multispecialty Hospital",
+      "city": "Bengaluru",
+      "address": "12 MG Road, Bengaluru",
+      "rating": 4.6,
+      "specialties": [
+        "Cardiology",
+        "General Medicine"
+      ],
+      "icon": "🏥",
+      "ownerId": "u-demo-o",
+      "verificationStatus": "Verified",
+      "rooms": [
+        {
+          "type": "General Ward",
+          "price": 1800,
+          "beds": 10,
+          "totalBeds": 20
+        },
+        {
+          "type": "Private Room",
+          "price": 5200,
+          "beds": 4,
+          "totalBeds": 6
+        },
+        {
+          "type": "ICU",
+          "price": 14500,
+          "beds": 2,
+          "totalBeds": 4
+        }
+      ],
+      "listedForPatients": true,
+      "hospitalVerification": null
+    },
+    {
+      "id": 2,
+      "name": "St. Anne's Care Centre",
+      "city": "Mumbai",
+      "address": "45 Marine Road, Mumbai",
+      "rating": 4.3,
+      "specialties": [
+        "Orthopedics",
+        "Pediatrics"
+      ],
+      "icon": "🏥",
+      "ownerId": null,
+      "verificationStatus": "Verified",
+      "rooms": [
+        {
+          "type": "General Ward",
+          "price": 2100,
+          "beds": 8,
+          "totalBeds": 12
+        },
+        {
+          "type": "Private Room",
+          "price": 6400,
+          "beds": 5,
+          "totalBeds": 7
+        },
+        {
+          "type": "ICU",
+          "price": 16800,
+          "beds": 1,
+          "totalBeds": 2
+        }
+      ],
+      "listedForPatients": true,
+      "hospitalVerification": null
+    },
+    {
+      "id": 3,
+      "name": "Sunrise Institute of Medical Sciences",
+      "city": "Delhi",
+      "address": "88 Ring Road, Delhi",
+      "rating": 4.8,
+      "specialties": [
+        "Oncology",
+        "Cardiology"
+      ],
+      "icon": "🏥",
+      "ownerId": null,
+      "verificationStatus": "Verified",
+      "rooms": [
+        {
+          "type": "General Ward",
+          "price": 2400,
+          "beds": 6,
+          "totalBeds": 10
+        },
+        {
+          "type": "Private Room",
+          "price": 7300,
+          "beds": 3,
+          "totalBeds": 5
+        },
+        {
+          "type": "ICU",
+          "price": 19500,
+          "beds": 3,
+          "totalBeds": 4
+        }
+      ],
+      "listedForPatients": true,
+      "hospitalVerification": null
+    },
+    {
+      "id": 4,
+      "name": "Lakeside General Hospital",
+      "city": "Bengaluru",
+      "address": "8 Lake View, Bengaluru",
+      "rating": 4.1,
+      "specialties": [
+        "General Medicine",
+        "Maternity"
+      ],
+      "icon": "🏥",
+      "ownerId": null,
+      "verificationStatus": "Verified",
+      "rooms": [
+        {
+          "type": "General Ward",
+          "price": 1500,
+          "beds": 20,
+          "totalBeds": 24
+        },
+        {
+          "type": "Private Room",
+          "price": 4200,
+          "beds": 6,
+          "totalBeds": 8
+        },
+        {
+          "type": "ICU",
+          "price": 12000,
+          "beds": 2,
+          "totalBeds": 3
+        }
+      ],
+      "listedForPatients": true,
+      "hospitalVerification": null
+    },
+    {
+      "id": 5,
+      "name": "Harborview Children's Hospital",
+      "city": "Chennai",
+      "address": "19 Beach Road, Chennai",
+      "rating": 4.7,
+      "specialties": [
+        "Pediatrics"
+      ],
+      "icon": "🏥",
+      "ownerId": null,
+      "verificationStatus": "Verified",
+      "rooms": [
+        {
+          "type": "General Ward",
+          "price": 1700,
+          "beds": 10,
+          "totalBeds": 15
+        },
+        {
+          "type": "Private Room",
+          "price": 4900,
+          "beds": 4,
+          "totalBeds": 6
+        },
+        {
+          "type": "ICU",
+          "price": 13200,
+          "beds": 2,
+          "totalBeds": 3
+        }
+      ],
+      "listedForPatients": true,
+      "hospitalVerification": null
+    },
+    {
+      "id": 6,
+      "name": "Metro Orthopedic & Trauma Centre",
+      "city": "Mumbai",
+      "address": "77 Central Avenue, Mumbai",
+      "rating": 4,
+      "specialties": [
+        "Orthopedics"
+      ],
+      "icon": "🏥",
+      "ownerId": null,
+      "verificationStatus": "Verified",
+      "rooms": [
+        {
+          "type": "General Ward",
+          "price": 1950,
+          "beds": 9,
+          "totalBeds": 12
+        },
+        {
+          "type": "Private Room",
+          "price": 5800,
+          "beds": 3,
+          "totalBeds": 5
+        },
+        {
+          "type": "ICU",
+          "price": 15600,
+          "beds": 1,
+          "totalBeds": 2
+        }
+      ],
+      "listedForPatients": true,
+      "hospitalVerification": null
+    },
+    {
+      "id": 7,
+      "name": "Riverside Cardiac Institute",
+      "city": "Delhi",
+      "address": "4 Riverside Drive, Delhi",
+      "rating": 4.9,
+      "specialties": [
+        "Cardiology"
+      ],
+      "icon": "🏥",
+      "ownerId": null,
+      "verificationStatus": "Verified",
+      "rooms": [
+        {
+          "type": "General Ward",
+          "price": 2600,
+          "beds": 5,
+          "totalBeds": 8
+        },
+        {
+          "type": "Private Room",
+          "price": 8100,
+          "beds": 2,
+          "totalBeds": 3
+        },
+        {
+          "type": "ICU",
+          "price": 21000,
+          "beds": 4,
+          "totalBeds": 5
+        }
+      ],
+      "listedForPatients": true,
+      "hospitalVerification": null
+    },
+    {
+      "id": 8,
+      "name": "Everwell Women & Maternity Hospital",
+      "city": "Chennai",
+      "address": "21 Anna Nagar, Chennai",
+      "rating": 4.4,
+      "specialties": [
+        "Maternity",
+        "General Medicine"
+      ],
+      "icon": "🏥",
+      "ownerId": null,
+      "verificationStatus": "Verified",
+      "rooms": [
+        {
+          "type": "General Ward",
+          "price": 1600,
+          "beds": 14,
+          "totalBeds": 18
+        },
+        {
+          "type": "Private Room",
+          "price": 4700,
+          "beds": 5,
+          "totalBeds": 7
+        },
+        {
+          "type": "ICU",
+          "price": 11800,
+          "beds": 0,
+          "totalBeds": 2
+        }
+      ],
+      "listedForPatients": true,
+      "hospitalVerification": null
+    },
+    {
+      "id": 9,
+      "name": "Pinegrove Oncology Centre",
+      "city": "Bengaluru",
+      "address": "55 Tech Park Road, Bengaluru",
+      "rating": 4.5,
+      "specialties": [
+        "Oncology"
+      ],
+      "icon": "🏥",
+      "ownerId": null,
+      "verificationStatus": "Verified",
+      "rooms": [
+        {
+          "type": "General Ward",
+          "price": 2200,
+          "beds": 7,
+          "totalBeds": 10
+        },
+        {
+          "type": "Private Room",
+          "price": 6900,
+          "beds": 3,
+          "totalBeds": 4
+        },
+        {
+          "type": "ICU",
+          "price": 17400,
+          "beds": 2,
+          "totalBeds": 3
+        }
+      ],
+      "listedForPatients": true,
+      "hospitalVerification": null
+    }
+  ],
+  "bookings": [
+    {
+      "id": "ed4708a8-01d0-4e00-9a6e-c72fc5dddf53",
+      "reference": "MS-A740FBB0",
+      "patientUserId": "u-demo-p",
+      "hospitalId": 1,
+      "hospitalName": "Greenview Multispecialty Hospital",
+      "roomType": "General Ward",
+      "patientName": "Test Patient",
+      "phone": "9876543210",
+      "email": "test@medstay.demo",
+      "age": 45,
+      "gender": "Male",
+      "admissionDate": "2026-10-15",
+      "medicalCondition": "Observation",
+      "emergencyContactName": "Test Kin",
+      "emergencyContactPhone": "9876543211",
+      "nights": 2,
+      "total": 3600,
+      "status": "Confirmed",
+      "createdAt": "2026-10-09T17:40:48.388Z"
+    },
+    {
+      "id": "2f30fc85-1a46-4984-9569-15a402677e6b",
+      "reference": "MS-33501E7C",
+      "patientUserId": "u-demo-p",
+      "hospitalId": 1,
+      "hospitalName": "Greenview Multispecialty Hospital",
+      "roomType": "General Ward",
+      "patientName": "Test Patient",
+      "phone": "9876543210",
+      "email": "test@medstay.demo",
+      "age": 45,
+      "gender": "Male",
+      "admissionDate": "2026-10-15",
+      "medicalCondition": "Observation",
+      "emergencyContactName": "Test Kin",
+      "emergencyContactPhone": "9876543211",
+      "nights": 2,
+      "total": 3600,
+      "status": "Confirmed",
+      "createdAt": "2026-10-09T17:41:31.964Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "b3820e22-63e9-4554-9f1a-72848facf348",
+      "userId": "u-demo-p",
+      "createdAt": "2026-10-10T07:31:59.098Z"
+    },
+    {
+      "token": "c780a81c-833e-4cf7-82fe-4dda42ef76c8",
+      "userId": "u-demo-o",
+      "createdAt": "2026-10-10T07:50:14.437Z"
+    },
+    {
+      "token": "a6cc8f55-66c9-4fad-806a-053800b5fe4f",
+      "userId": "u-demo-p",
+      "createdAt": "2026-10-10T11:37:57.827Z"
+    }
+  ],
+  "bloodBanks": [
+    {
+      "id": "bb-1",
+      "hospitalId": 1,
+      "name": "Greenview Transfusion Medicine & Blood Centre",
+      "address": "12 MG Road, Bengaluru",
+      "city": "Bengaluru",
+      "district": "Bengaluru Urban",
+      "state": "Karnataka",
+      "pincode": "560001",
+      "contact": "+91-80-2559-1122",
+      "emergencyContact": "+91-98800-11223",
+      "email": "bloodbank@greenview.demo",
+      "category": "Hospital-attached",
+      "operatingHours": "24/7",
+      "verificationStatus": "Recently Confirmed",
+      "source": "State Transfusion Council (KSACS)",
+      "lastVerifiedAt": "2026-10-09T17:33:50.485Z",
+      "licenseNumber": "KA-BB-2024-0491",
+      "apheresisAvailable": true,
+      "website": "https://greenview.demo/transfusion"
+    },
+    {
+      "id": "bb-2",
+      "hospitalId": 4,
+      "name": "Lakeside Rotary Blood Centre",
+      "address": "8 Lake View, Bengaluru",
+      "city": "Bengaluru",
+      "district": "Bengaluru Urban",
+      "state": "Karnataka",
+      "pincode": "560042",
+      "contact": "+91-80-2520-3344",
+      "emergencyContact": "+91-98450-44556",
+      "email": "rotarybb@lakeside.demo",
+      "category": "Charitable / Trust",
+      "operatingHours": "24/7",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Karnataka State Blood Transfusion Council",
+      "lastVerifiedAt": "2026-10-09T17:41:32.080Z",
+      "licenseNumber": "KA-BB-2023-0182",
+      "apheresisAvailable": true,
+      "website": "https://rotaryblood-lakeside.demo"
+    },
+    {
+      "id": "bb-3",
+      "hospitalId": null,
+      "name": "Red Cross Central Blood Bank Bengaluru",
+      "address": "26 Race Course Road, Bengaluru",
+      "city": "Bengaluru",
+      "district": "Bengaluru Urban",
+      "state": "Karnataka",
+      "pincode": "560001",
+      "contact": "+91-80-2226-8435",
+      "emergencyContact": "+91-94480-77665",
+      "email": "bengaluru@indianredcross.demo",
+      "category": "Indian Red Cross Society",
+      "operatingHours": "24/7",
+      "verificationStatus": "Reported Availability",
+      "source": "e-RaktKosh Demo Registry",
+      "lastVerifiedAt": "2026-10-09T16:52:00.000Z",
+      "licenseNumber": "KA-BB-2021-0012",
+      "apheresisAvailable": true,
+      "website": "https://indianredcross-karnataka.demo"
+    },
+    {
+      "id": "bb-4",
+      "hospitalId": 2,
+      "name": "St. Anne's Care Blood & Component Bank",
+      "address": "45 Marine Road, Mumbai",
+      "city": "Mumbai",
+      "district": "Mumbai City",
+      "state": "Maharashtra",
+      "pincode": "400020",
+      "contact": "+91-22-2204-5566",
+      "emergencyContact": "+91-98200-99887",
+      "email": "bloodtransfusion@stannes.demo",
+      "category": "Hospital-attached",
+      "operatingHours": "24/7",
+      "verificationStatus": "Recently Confirmed",
+      "source": "State Blood Transfusion Council Maharashtra",
+      "lastVerifiedAt": "2026-10-09T21:40:00.000Z",
+      "licenseNumber": "MH-MUM-BB-2022-094",
+      "apheresisAvailable": true,
+      "website": "https://stannes.demo/bloodbank"
+    },
+    {
+      "id": "bb-5",
+      "hospitalId": 6,
+      "name": "Metro Central Trauma Blood Bank",
+      "address": "77 Central Avenue, Mumbai",
+      "city": "Mumbai",
+      "district": "Mumbai Suburban",
+      "state": "Maharashtra",
+      "pincode": "400051",
+      "contact": "+91-22-2651-7788",
+      "emergencyContact": "+91-98190-33445",
+      "email": "blood@metroortho.demo",
+      "category": "Hospital-attached",
+      "operatingHours": "24/7",
+      "verificationStatus": "Data Stale",
+      "source": "e-RaktKosh Demo Registry",
+      "lastVerifiedAt": "2026-10-06T22:52:00.000Z",
+      "licenseNumber": "MH-MUM-BB-2020-031",
+      "apheresisAvailable": false,
+      "website": ""
+    },
+    {
+      "id": "bb-6",
+      "hospitalId": null,
+      "name": "Lions Metropolitan Blood Centre Mumbai",
+      "address": "102 Dadar West, Mumbai",
+      "city": "Mumbai",
+      "district": "Mumbai City",
+      "state": "Maharashtra",
+      "pincode": "400028",
+      "contact": "+91-22-2430-1122",
+      "emergencyContact": "+91-98211-66778",
+      "email": "lionsbloodbank@lionsmumbai.demo",
+      "category": "Charitable / Trust",
+      "operatingHours": "08:00 - 22:00",
+      "verificationStatus": "Recently Confirmed",
+      "source": "State Blood Transfusion Council Maharashtra",
+      "lastVerifiedAt": "2026-10-09T20:58:00.000Z",
+      "licenseNumber": "MH-MUM-BB-2023-118",
+      "apheresisAvailable": true,
+      "website": "https://lionsmumbaiblood.demo"
+    },
+    {
+      "id": "bb-7",
+      "hospitalId": 3,
+      "name": "Sunrise Regional Transfusion Centre",
+      "address": "88 Ring Road, Delhi",
+      "city": "Delhi",
+      "district": "South Delhi",
+      "state": "Delhi",
+      "pincode": "110029",
+      "contact": "+91-11-2659-4400",
+      "emergencyContact": "+91-98110-55667",
+      "email": "transfusion@sunrise.demo",
+      "category": "Hospital-attached",
+      "operatingHours": "24/7",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Delhi State Blood Transfusion Council",
+      "lastVerifiedAt": "2026-10-09T21:46:00.000Z",
+      "licenseNumber": "DL-BB-2024-0082",
+      "apheresisAvailable": true,
+      "website": "https://sunrise.demo/blood"
+    },
+    {
+      "id": "bb-8",
+      "hospitalId": 7,
+      "name": "Riverside Cardiac Transfusion Unit",
+      "address": "4 Riverside Drive, Delhi",
+      "city": "Delhi",
+      "district": "Central Delhi",
+      "state": "Delhi",
+      "pincode": "110006",
+      "contact": "+91-11-2327-8899",
+      "emergencyContact": "+91-98101-11223",
+      "email": "blooddesk@riversidecardiac.demo",
+      "category": "Hospital-attached",
+      "operatingHours": "24/7",
+      "verificationStatus": "Reported Availability",
+      "source": "e-RaktKosh Demo Registry",
+      "lastVerifiedAt": "2026-10-09T11:52:00.000Z",
+      "licenseNumber": "DL-BB-2022-0419",
+      "apheresisAvailable": true,
+      "website": "https://riversidecardiac.demo"
+    },
+    {
+      "id": "bb-9",
+      "hospitalId": null,
+      "name": "Capital Charitable Blood Trust",
+      "address": "15 Connaught Circus, Delhi",
+      "city": "Delhi",
+      "district": "New Delhi",
+      "state": "Delhi",
+      "pincode": "110001",
+      "contact": "+91-11-2334-5566",
+      "emergencyContact": "+91-98100-99887",
+      "email": "contact@capitalbloodtrust.demo",
+      "category": "Charitable / Trust",
+      "operatingHours": "24/7",
+      "verificationStatus": "Verification Needed",
+      "source": "Community Partner Report",
+      "lastVerifiedAt": "2026-10-09T04:52:00.000Z",
+      "licenseNumber": "DL-BB-2021-0205",
+      "apheresisAvailable": false,
+      "website": ""
+    },
+    {
+      "id": "bb-10",
+      "hospitalId": 5,
+      "name": "Harborview Pediatric Blood & Platelet Centre",
+      "address": "19 Beach Road, Chennai",
+      "city": "Chennai",
+      "district": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600001",
+      "contact": "+91-44-2536-1234",
+      "emergencyContact": "+91-98400-33445",
+      "email": "pediatricblood@harborview.demo",
+      "category": "Hospital-attached",
+      "operatingHours": "24/7",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Tamil Nadu State Blood Transfusion Council",
+      "lastVerifiedAt": "2026-10-09T21:10:00.000Z",
+      "licenseNumber": "TN-CHE-BB-2023-055",
+      "apheresisAvailable": true,
+      "website": "https://harborview.demo/blood"
+    },
+    {
+      "id": "bb-11",
+      "hospitalId": 8,
+      "name": "Everwell Women Blood Support Unit",
+      "address": "21 Anna Nagar, Chennai",
+      "city": "Chennai",
+      "district": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600040",
+      "contact": "+91-44-2621-8899",
+      "emergencyContact": "+91-98401-55667",
+      "email": "bloodbank@everwell.demo",
+      "category": "Hospital-attached",
+      "operatingHours": "08:00 - 20:00",
+      "verificationStatus": "Data Stale",
+      "source": "e-RaktKosh Demo Registry",
+      "lastVerifiedAt": "2026-10-07T22:52:00.000Z",
+      "licenseNumber": "TN-CHE-BB-2021-102",
+      "apheresisAvailable": false,
+      "website": ""
+    },
+    {
+      "id": "bb-12",
+      "hospitalId": null,
+      "name": "Jeevan Blood Bank & Transfusion Centre",
+      "address": "22 Marshalls Road, Egmore, Chennai",
+      "city": "Chennai",
+      "district": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600008",
+      "contact": "+91-44-2855-4422",
+      "emergencyContact": "+91-98410-88990",
+      "email": "info@jeevanbloodbank.demo",
+      "category": "Charitable / Trust",
+      "operatingHours": "24/7",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Tamil Nadu State Blood Transfusion Council",
+      "lastVerifiedAt": "2026-10-09T22:22:00.000Z",
+      "licenseNumber": "TN-CHE-BB-2020-009",
+      "apheresisAvailable": true,
+      "website": "https://jeevanbloodbank.demo"
+    }
+  ],
+  "bloodStock": [
+    {
+      "id": "bs-1",
+      "facilityId": "bb-1",
+      "bloodGroup": "O-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 1,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "CRITICAL: Urgent voluntary donors requested"
+    },
+    {
+      "id": "bs-2",
+      "facilityId": "bb-1",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 14,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Adequate reserve"
+    },
+    {
+      "id": "bs-3",
+      "facilityId": "bb-1",
+      "bloodGroup": "A+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 8,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Standard supply"
+    },
+    {
+      "id": "bs-4",
+      "facilityId": "bb-1",
+      "bloodGroup": "A-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 2,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Low stock alert"
+    },
+    {
+      "id": "bs-5",
+      "facilityId": "bb-1",
+      "bloodGroup": "B+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 12,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Adequate reserve"
+    },
+    {
+      "id": "bs-6",
+      "facilityId": "bb-1",
+      "bloodGroup": "B-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 3,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Limited reserve"
+    },
+    {
+      "id": "bs-7",
+      "facilityId": "bb-1",
+      "bloodGroup": "AB+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 6,
+      "lastUpdatedAt": "2026-10-09T17:33:50.485Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Authorized Demo Coordinator",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-8",
+      "facilityId": "bb-1",
+      "bloodGroup": "AB-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 0,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Depleted; matching required"
+    },
+    {
+      "id": "bs-9",
+      "facilityId": "bb-1",
+      "bloodGroup": "O+",
+      "component": "Platelets",
+      "reportedUnits": 10,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Single donor platelets available"
+    },
+    {
+      "id": "bs-10",
+      "facilityId": "bb-1",
+      "bloodGroup": "A+",
+      "component": "Platelets",
+      "reportedUnits": 6,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Random donor platelets"
+    },
+    {
+      "id": "bs-11",
+      "facilityId": "bb-1",
+      "bloodGroup": "B+",
+      "component": "Platelets",
+      "reportedUnits": 2,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Low reserve"
+    },
+    {
+      "id": "bs-12",
+      "facilityId": "bb-1",
+      "bloodGroup": "O+",
+      "component": "Fresh Frozen Plasma (FFP)",
+      "reportedUnits": 18,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Deep freeze stored (-30C)"
+    },
+    {
+      "id": "bs-13",
+      "facilityId": "bb-1",
+      "bloodGroup": "AB+",
+      "component": "Fresh Frozen Plasma (FFP)",
+      "reportedUnits": 12,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Universal plasma ready"
+    },
+    {
+      "id": "bs-14",
+      "facilityId": "bb-1",
+      "bloodGroup": "O+",
+      "component": "Whole Blood",
+      "reportedUnits": 6,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Screened Whole Blood"
+    },
+    {
+      "id": "bs-15",
+      "facilityId": "bb-1",
+      "bloodGroup": "B+",
+      "component": "Whole Blood",
+      "reportedUnits": 5,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Direct Facility Sync",
+      "notes": "Screened Whole Blood"
+    },
+    {
+      "id": "bs-16",
+      "facilityId": "bb-2",
+      "bloodGroup": "O-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 9,
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Rotary Blood Council Sync",
+      "notes": "Surplus units verified at central cold storage"
+    },
+    {
+      "id": "bs-17",
+      "facilityId": "bb-2",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 22,
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Rotary Blood Council Sync",
+      "notes": "High availability"
+    },
+    {
+      "id": "bs-18",
+      "facilityId": "bb-2",
+      "bloodGroup": "A+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 15,
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Rotary Blood Council Sync",
+      "notes": "Stable inventory"
+    },
+    {
+      "id": "bs-19",
+      "facilityId": "bb-2",
+      "bloodGroup": "A-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 6,
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Rotary Blood Council Sync",
+      "notes": "Available"
+    },
+    {
+      "id": "bs-20",
+      "facilityId": "bb-2",
+      "bloodGroup": "B+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 18,
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Rotary Blood Council Sync",
+      "notes": "Stable inventory"
+    },
+    {
+      "id": "bs-21",
+      "facilityId": "bb-2",
+      "bloodGroup": "B-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 14,
+      "lastUpdatedAt": "2026-10-09T17:41:32.080Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Authorized Update (Demo Patient)",
+      "notes": "Cold chain verified at 3.5C"
+    },
+    {
+      "id": "bs-22",
+      "facilityId": "bb-2",
+      "bloodGroup": "AB+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 8,
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Rotary Blood Council Sync",
+      "notes": "Available"
+    },
+    {
+      "id": "bs-23",
+      "facilityId": "bb-2",
+      "bloodGroup": "AB-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 4,
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Rotary Blood Council Sync",
+      "notes": "Reserve stock"
+    },
+    {
+      "id": "bs-24",
+      "facilityId": "bb-2",
+      "bloodGroup": "O+",
+      "component": "Platelets",
+      "reportedUnits": 14,
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Rotary Blood Council Sync",
+      "notes": "Platelet apheresis ready"
+    },
+    {
+      "id": "bs-25",
+      "facilityId": "bb-2",
+      "bloodGroup": "B+",
+      "component": "Platelets",
+      "reportedUnits": 8,
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Rotary Blood Council Sync",
+      "notes": "Platelet concentrates"
+    },
+    {
+      "id": "bs-26",
+      "facilityId": "bb-2",
+      "bloodGroup": "O+",
+      "component": "Fresh Frozen Plasma (FFP)",
+      "reportedUnits": 25,
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Rotary Blood Council Sync",
+      "notes": "Deep freeze"
+    },
+    {
+      "id": "bs-27",
+      "facilityId": "bb-3",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 16,
+      "lastUpdatedAt": "2026-10-09T16:52:00.000Z",
+      "verificationStatus": "Reported Availability",
+      "source": "Red Cross State Portal",
+      "notes": "Morning shift tally"
+    },
+    {
+      "id": "bs-28",
+      "facilityId": "bb-3",
+      "bloodGroup": "A+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 11,
+      "lastUpdatedAt": "2026-10-09T16:52:00.000Z",
+      "verificationStatus": "Reported Availability",
+      "source": "Red Cross State Portal",
+      "notes": "Morning shift tally"
+    },
+    {
+      "id": "bs-29",
+      "facilityId": "bb-3",
+      "bloodGroup": "B+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 14,
+      "lastUpdatedAt": "2026-10-09T16:52:00.000Z",
+      "verificationStatus": "Reported Availability",
+      "source": "Red Cross State Portal",
+      "notes": "Morning shift tally"
+    },
+    {
+      "id": "bs-30",
+      "facilityId": "bb-3",
+      "bloodGroup": "AB+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 6,
+      "lastUpdatedAt": "2026-10-09T16:52:00.000Z",
+      "verificationStatus": "Reported Availability",
+      "source": "Red Cross State Portal",
+      "notes": "Morning shift tally"
+    },
+    {
+      "id": "bs-31",
+      "facilityId": "bb-3",
+      "bloodGroup": "O-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 3,
+      "lastUpdatedAt": "2026-10-09T16:52:00.000Z",
+      "verificationStatus": "Reported Availability",
+      "source": "Red Cross State Portal",
+      "notes": "Low stock recorded in morning"
+    },
+    {
+      "id": "bs-32",
+      "facilityId": "bb-3",
+      "bloodGroup": "O+",
+      "component": "Whole Blood",
+      "reportedUnits": 10,
+      "lastUpdatedAt": "2026-10-09T16:52:00.000Z",
+      "verificationStatus": "Reported Availability",
+      "source": "Red Cross State Portal",
+      "notes": "Whole blood units"
+    },
+    {
+      "id": "bs-33",
+      "facilityId": "bb-3",
+      "bloodGroup": "A+",
+      "component": "Whole Blood",
+      "reportedUnits": 8,
+      "lastUpdatedAt": "2026-10-09T16:52:00.000Z",
+      "verificationStatus": "Reported Availability",
+      "source": "Red Cross State Portal",
+      "notes": "Whole blood units"
+    },
+    {
+      "id": "bs-34",
+      "facilityId": "bb-3",
+      "bloodGroup": "AB-",
+      "component": "Cryoprecipitate",
+      "reportedUnits": null,
+      "lastUpdatedAt": null,
+      "verificationStatus": "Availability Unknown",
+      "source": "Red Cross State Portal",
+      "notes": "Inventory audit ongoing; quantities unconfirmed"
+    },
+    {
+      "id": "bs-35",
+      "facilityId": "bb-4",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 19,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Hospital Transfusion LIS",
+      "notes": "Routine stock verified"
+    },
+    {
+      "id": "bs-36",
+      "facilityId": "bb-4",
+      "bloodGroup": "O-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 8,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Hospital Transfusion LIS",
+      "notes": "Available reserve"
+    },
+    {
+      "id": "bs-37",
+      "facilityId": "bb-4",
+      "bloodGroup": "A+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 14,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Hospital Transfusion LIS",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-38",
+      "facilityId": "bb-4",
+      "bloodGroup": "A-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 1,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Hospital Transfusion LIS",
+      "notes": "CRITICAL shortage of A- units"
+    },
+    {
+      "id": "bs-39",
+      "facilityId": "bb-4",
+      "bloodGroup": "B+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 16,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Hospital Transfusion LIS",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-40",
+      "facilityId": "bb-4",
+      "bloodGroup": "B-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 4,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Hospital Transfusion LIS",
+      "notes": "Limited"
+    },
+    {
+      "id": "bs-41",
+      "facilityId": "bb-4",
+      "bloodGroup": "AB+",
+      "component": "Platelets",
+      "reportedUnits": 6,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Hospital Transfusion LIS",
+      "notes": "Apheresis units"
+    },
+    {
+      "id": "bs-42",
+      "facilityId": "bb-4",
+      "bloodGroup": "O+",
+      "component": "Platelets",
+      "reportedUnits": 11,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Hospital Transfusion LIS",
+      "notes": "Agitator stored (22C)"
+    },
+    {
+      "id": "bs-43",
+      "facilityId": "bb-4",
+      "bloodGroup": "O-",
+      "component": "Fresh Frozen Plasma (FFP)",
+      "reportedUnits": 10,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Hospital Transfusion LIS",
+      "notes": "Standard"
+    },
+    {
+      "id": "bs-44",
+      "facilityId": "bb-5",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 5,
+      "lastUpdatedAt": "2026-10-06T22:52:00.000Z",
+      "verificationStatus": "Data Stale",
+      "source": "Legacy e-RaktKosh Batch Sync",
+      "notes": "Last sync recorded 3 days ago"
+    },
+    {
+      "id": "bs-45",
+      "facilityId": "bb-5",
+      "bloodGroup": "B+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 4,
+      "lastUpdatedAt": "2026-10-06T22:52:00.000Z",
+      "verificationStatus": "Data Stale",
+      "source": "Legacy e-RaktKosh Batch Sync",
+      "notes": "Last sync recorded 3 days ago"
+    },
+    {
+      "id": "bs-46",
+      "facilityId": "bb-5",
+      "bloodGroup": "A+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 2,
+      "lastUpdatedAt": "2026-10-06T22:52:00.000Z",
+      "verificationStatus": "Data Stale",
+      "source": "Legacy e-RaktKosh Batch Sync",
+      "notes": "Stale report — cannot confirm active shortage without verification"
+    },
+    {
+      "id": "bs-47",
+      "facilityId": "bb-5",
+      "bloodGroup": "O-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 0,
+      "lastUpdatedAt": "2026-10-06T22:52:00.000Z",
+      "verificationStatus": "Data Stale",
+      "source": "Legacy e-RaktKosh Batch Sync",
+      "notes": "Outdated record: re-verification required"
+    },
+    {
+      "id": "bs-48",
+      "facilityId": "bb-6",
+      "bloodGroup": "A-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 7,
+      "lastUpdatedAt": "2026-10-09T21:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "SBTC Maharashtra",
+      "notes": "Verified reserve available for emergency request"
+    },
+    {
+      "id": "bs-49",
+      "facilityId": "bb-6",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 21,
+      "lastUpdatedAt": "2026-10-09T21:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "SBTC Maharashtra",
+      "notes": "Sufficient"
+    },
+    {
+      "id": "bs-50",
+      "facilityId": "bb-6",
+      "bloodGroup": "O-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 5,
+      "lastUpdatedAt": "2026-10-09T21:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "SBTC Maharashtra",
+      "notes": "Available"
+    },
+    {
+      "id": "bs-51",
+      "facilityId": "bb-6",
+      "bloodGroup": "B+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 14,
+      "lastUpdatedAt": "2026-10-09T21:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "SBTC Maharashtra",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-52",
+      "facilityId": "bb-6",
+      "bloodGroup": "AB-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 3,
+      "lastUpdatedAt": "2026-10-09T21:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "SBTC Maharashtra",
+      "notes": "Available"
+    },
+    {
+      "id": "bs-53",
+      "facilityId": "bb-6",
+      "bloodGroup": "A+",
+      "component": "Platelets",
+      "reportedUnits": 9,
+      "lastUpdatedAt": "2026-10-09T21:04:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "SBTC Maharashtra",
+      "notes": "Platelets active"
+    },
+    {
+      "id": "bs-54",
+      "facilityId": "bb-7",
+      "bloodGroup": "B-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 1,
+      "lastUpdatedAt": "2026-10-09T21:46:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Sunrise Central Blood Lab",
+      "notes": "URGENT shortage: 1 unit remaining in transfusion fridge"
+    },
+    {
+      "id": "bs-55",
+      "facilityId": "bb-7",
+      "bloodGroup": "B+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 20,
+      "lastUpdatedAt": "2026-10-09T21:46:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Sunrise Central Blood Lab",
+      "notes": "Abundant"
+    },
+    {
+      "id": "bs-56",
+      "facilityId": "bb-7",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 18,
+      "lastUpdatedAt": "2026-10-09T21:46:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Sunrise Central Blood Lab",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-57",
+      "facilityId": "bb-7",
+      "bloodGroup": "O-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 4,
+      "lastUpdatedAt": "2026-10-09T21:46:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Sunrise Central Blood Lab",
+      "notes": "Moderate"
+    },
+    {
+      "id": "bs-58",
+      "facilityId": "bb-7",
+      "bloodGroup": "A+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 12,
+      "lastUpdatedAt": "2026-10-09T21:46:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Sunrise Central Blood Lab",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-59",
+      "facilityId": "bb-7",
+      "bloodGroup": "A-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 5,
+      "lastUpdatedAt": "2026-10-09T21:46:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Sunrise Central Blood Lab",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-60",
+      "facilityId": "bb-7",
+      "bloodGroup": "AB+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 7,
+      "lastUpdatedAt": "2026-10-09T21:46:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Sunrise Central Blood Lab",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-61",
+      "facilityId": "bb-7",
+      "bloodGroup": "O+",
+      "component": "Platelets",
+      "reportedUnits": 15,
+      "lastUpdatedAt": "2026-10-09T21:46:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Sunrise Central Blood Lab",
+      "notes": "SDP and RDP available"
+    },
+    {
+      "id": "bs-62",
+      "facilityId": "bb-7",
+      "bloodGroup": "B+",
+      "component": "Platelets",
+      "reportedUnits": 1,
+      "lastUpdatedAt": "2026-10-09T21:46:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Sunrise Central Blood Lab",
+      "notes": "Low platelets for B group"
+    },
+    {
+      "id": "bs-63",
+      "facilityId": "bb-8",
+      "bloodGroup": "B-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 6,
+      "lastUpdatedAt": "2026-10-09T11:52:00.000Z",
+      "verificationStatus": "Reported Availability",
+      "source": "Delhi Transfusion Portal",
+      "notes": "Cardiac surgical reserve recorded this morning"
+    },
+    {
+      "id": "bs-64",
+      "facilityId": "bb-8",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 14,
+      "lastUpdatedAt": "2026-10-09T11:52:00.000Z",
+      "verificationStatus": "Reported Availability",
+      "source": "Delhi Transfusion Portal",
+      "notes": "Sufficient"
+    },
+    {
+      "id": "bs-65",
+      "facilityId": "bb-8",
+      "bloodGroup": "A+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 9,
+      "lastUpdatedAt": "2026-10-09T11:52:00.000Z",
+      "verificationStatus": "Reported Availability",
+      "source": "Delhi Transfusion Portal",
+      "notes": "Sufficient"
+    },
+    {
+      "id": "bs-66",
+      "facilityId": "bb-8",
+      "bloodGroup": "O+",
+      "component": "Fresh Frozen Plasma (FFP)",
+      "reportedUnits": 12,
+      "lastUpdatedAt": "2026-10-09T11:52:00.000Z",
+      "verificationStatus": "Reported Availability",
+      "source": "Delhi Transfusion Portal",
+      "notes": "Cryo & FFP storage"
+    },
+    {
+      "id": "bs-67",
+      "facilityId": "bb-9",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 8,
+      "lastUpdatedAt": "2026-10-09T04:52:00.000Z",
+      "verificationStatus": "Verification Needed",
+      "source": "Community Volunteer Desk",
+      "notes": "Unverified tally from afternoon"
+    },
+    {
+      "id": "bs-68",
+      "facilityId": "bb-9",
+      "bloodGroup": "B+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 6,
+      "lastUpdatedAt": "2026-10-09T04:52:00.000Z",
+      "verificationStatus": "Verification Needed",
+      "source": "Community Volunteer Desk",
+      "notes": "Unverified"
+    },
+    {
+      "id": "bs-69",
+      "facilityId": "bb-9",
+      "bloodGroup": "A+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 4,
+      "lastUpdatedAt": "2026-10-09T04:52:00.000Z",
+      "verificationStatus": "Verification Needed",
+      "source": "Community Volunteer Desk",
+      "notes": "Needs physical log check"
+    },
+    {
+      "id": "bs-70",
+      "facilityId": "bb-9",
+      "bloodGroup": "O-",
+      "component": "Whole Blood",
+      "reportedUnits": null,
+      "lastUpdatedAt": null,
+      "verificationStatus": "Availability Unknown",
+      "source": "Community Volunteer Desk",
+      "notes": "Report incomplete; contact blood bank directly"
+    },
+    {
+      "id": "bs-71",
+      "facilityId": "bb-10",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 16,
+      "lastUpdatedAt": "2026-10-09T21:10:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Tamil Nadu State Transfusion Council",
+      "notes": "Pediatric filtered PRBC units"
+    },
+    {
+      "id": "bs-72",
+      "facilityId": "bb-10",
+      "bloodGroup": "O-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 4,
+      "lastUpdatedAt": "2026-10-09T21:10:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Tamil Nadu State Transfusion Council",
+      "notes": "Filtered PRBC"
+    },
+    {
+      "id": "bs-73",
+      "facilityId": "bb-10",
+      "bloodGroup": "A+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 11,
+      "lastUpdatedAt": "2026-10-09T21:10:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Tamil Nadu State Transfusion Council",
+      "notes": "Standard"
+    },
+    {
+      "id": "bs-74",
+      "facilityId": "bb-10",
+      "bloodGroup": "B+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 13,
+      "lastUpdatedAt": "2026-10-09T21:10:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Tamil Nadu State Transfusion Council",
+      "notes": "Standard"
+    },
+    {
+      "id": "bs-75",
+      "facilityId": "bb-10",
+      "bloodGroup": "AB+",
+      "component": "Platelets",
+      "reportedUnits": 8,
+      "lastUpdatedAt": "2026-10-09T21:10:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Tamil Nadu State Transfusion Council",
+      "notes": "Pediatric units ready"
+    },
+    {
+      "id": "bs-76",
+      "facilityId": "bb-10",
+      "bloodGroup": "O+",
+      "component": "Platelets",
+      "reportedUnits": 12,
+      "lastUpdatedAt": "2026-10-09T21:10:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Tamil Nadu State Transfusion Council",
+      "notes": "Active agitator"
+    },
+    {
+      "id": "bs-77",
+      "facilityId": "bb-11",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 7,
+      "lastUpdatedAt": "2026-10-07T22:52:00.000Z",
+      "verificationStatus": "Data Stale",
+      "source": "Hospital Manual Log",
+      "notes": "Weekend log entry; please call to reconfirm"
+    },
+    {
+      "id": "bs-78",
+      "facilityId": "bb-11",
+      "bloodGroup": "B+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 5,
+      "lastUpdatedAt": "2026-10-07T22:52:00.000Z",
+      "verificationStatus": "Data Stale",
+      "source": "Hospital Manual Log",
+      "notes": "Weekend log entry"
+    },
+    {
+      "id": "bs-79",
+      "facilityId": "bb-12",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 24,
+      "lastUpdatedAt": "2026-10-09T22:22:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Jeevan Real-time LIS",
+      "notes": "Direct laboratory integration"
+    },
+    {
+      "id": "bs-80",
+      "facilityId": "bb-12",
+      "bloodGroup": "O-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 7,
+      "lastUpdatedAt": "2026-10-09T22:22:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Jeevan Real-time LIS",
+      "notes": "Tested and cross-match ready"
+    },
+    {
+      "id": "bs-81",
+      "facilityId": "bb-12",
+      "bloodGroup": "A+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 17,
+      "lastUpdatedAt": "2026-10-09T22:22:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Jeevan Real-time LIS",
+      "notes": "Abundant"
+    },
+    {
+      "id": "bs-82",
+      "facilityId": "bb-12",
+      "bloodGroup": "A-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 5,
+      "lastUpdatedAt": "2026-10-09T22:22:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Jeevan Real-time LIS",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-83",
+      "facilityId": "bb-12",
+      "bloodGroup": "B+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 21,
+      "lastUpdatedAt": "2026-10-09T22:22:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Jeevan Real-time LIS",
+      "notes": "Abundant"
+    },
+    {
+      "id": "bs-84",
+      "facilityId": "bb-12",
+      "bloodGroup": "B-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 4,
+      "lastUpdatedAt": "2026-10-09T22:22:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Jeevan Real-time LIS",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-85",
+      "facilityId": "bb-12",
+      "bloodGroup": "AB+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 9,
+      "lastUpdatedAt": "2026-10-09T22:22:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Jeevan Real-time LIS",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-86",
+      "facilityId": "bb-12",
+      "bloodGroup": "AB-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "reportedUnits": 3,
+      "lastUpdatedAt": "2026-10-09T22:22:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Jeevan Real-time LIS",
+      "notes": "Normal"
+    },
+    {
+      "id": "bs-87",
+      "facilityId": "bb-12",
+      "bloodGroup": "O+",
+      "component": "Platelets",
+      "reportedUnits": 18,
+      "lastUpdatedAt": "2026-10-09T22:22:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Jeevan Real-time LIS",
+      "notes": "Apheresis unit online"
+    },
+    {
+      "id": "bs-88",
+      "facilityId": "bb-12",
+      "bloodGroup": "B+",
+      "component": "Platelets",
+      "reportedUnits": 11,
+      "lastUpdatedAt": "2026-10-09T22:22:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Jeevan Real-time LIS",
+      "notes": "Available"
+    },
+    {
+      "id": "bs-89",
+      "facilityId": "bb-12",
+      "bloodGroup": "O+",
+      "component": "Whole Blood",
+      "reportedUnits": 14,
+      "lastUpdatedAt": "2026-10-09T22:22:00.000Z",
+      "verificationStatus": "Recently Confirmed",
+      "source": "Jeevan Real-time LIS",
+      "notes": "Screened voluntary units"
+    }
+  ],
+  "transplantCentres": [
+    {
+      "id": "tc-1",
+      "hospitalId": 3,
+      "name": "Sunrise Institute of Organ & Tissue Transplants",
+      "address": "88 Ring Road, Delhi",
+      "city": "Delhi",
+      "district": "South Delhi",
+      "state": "Delhi",
+      "pincode": "110029",
+      "contact": "+91-11-2659-4400",
+      "emergencyDesk": "+91-98110-55667",
+      "officialWebsite": "https://notto.mohfw.gov.in/",
+      "institutionType": "Tertiary Care Hospital & Research Centre",
+      "transplantServices": [
+        "Kidney",
+        "Liver",
+        "Heart",
+        "Cornea",
+        "Bone Marrow / Stem Cell"
+      ],
+      "verificationStatus": "NOTTO Registered / SOTTO Authorized",
+      "source": "National Organ & Tissue Transplant Organization (NOTTO) Public Registry 2026",
+      "lastVerifiedAt": "2026-10-04T22:52:00.000Z",
+      "coordinatorName": "Dr. R. K. Verma (Lead Transplant Coordinator)",
+      "registrationId": "NOTTO-DL-2024-H019",
+      "nottoReferenceUrl": "https://notto.mohfw.gov.in/"
+    },
+    {
+      "id": "tc-2",
+      "hospitalId": 7,
+      "name": "Riverside Advanced Thoracic & Cardiac Transplant Centre",
+      "address": "4 Riverside Drive, Delhi",
+      "city": "Delhi",
+      "district": "Central Delhi",
+      "state": "Delhi",
+      "pincode": "110006",
+      "contact": "+91-11-2327-8899",
+      "emergencyDesk": "+91-98101-11223",
+      "officialWebsite": "https://notto.mohfw.gov.in/",
+      "institutionType": "Super-Specialty Cardiac & Thoracic Institute",
+      "transplantServices": [
+        "Heart",
+        "Lung"
+      ],
+      "verificationStatus": "NOTTO Registered / SOTTO Authorized",
+      "source": "NOTTO Registered Centre Directory",
+      "lastVerifiedAt": "2026-09-27T22:52:00.000Z",
+      "coordinatorName": "Dr. Priya Tandon (Cardiothoracic Coordinator)",
+      "registrationId": "NOTTO-DL-2023-CT004",
+      "nottoReferenceUrl": "https://notto.mohfw.gov.in/"
+    },
+    {
+      "id": "tc-3",
+      "hospitalId": 1,
+      "name": "Greenview Comprehensive Transplant Center",
+      "address": "12 MG Road, Bengaluru",
+      "city": "Bengaluru",
+      "district": "Bengaluru Urban",
+      "state": "Karnataka",
+      "pincode": "560001",
+      "contact": "+91-80-2559-1122",
+      "emergencyDesk": "+91-98800-11223",
+      "officialWebsite": "https://jeevasarthakathe.karnataka.gov.in/",
+      "institutionType": "Multispecialty Tertiary Teaching Hospital",
+      "transplantServices": [
+        "Kidney",
+        "Liver",
+        "Pancreas",
+        "Cornea"
+      ],
+      "verificationStatus": "SOTTO Karnataka (Jeevasarthakathe) Registered",
+      "source": "Jeevasarthakathe / NOTTO South Registry",
+      "lastVerifiedAt": "2026-10-01T22:52:00.000Z",
+      "coordinatorName": "Dr. Anand Hegde (Transplant Secretariat)",
+      "registrationId": "KA-SOTTO-2024-008",
+      "nottoReferenceUrl": "https://notto.mohfw.gov.in/"
+    },
+    {
+      "id": "tc-4",
+      "hospitalId": 9,
+      "name": "Pinegrove Stem Cell & Bone Marrow Transplant Registry Centre",
+      "address": "55 Tech Park Road, Bengaluru",
+      "city": "Bengaluru",
+      "district": "Bengaluru Urban",
+      "state": "Karnataka",
+      "pincode": "560066",
+      "contact": "+91-80-4911-3300",
+      "emergencyDesk": "+91-98455-77889",
+      "officialWebsite": "https://notto.mohfw.gov.in/",
+      "institutionType": "Specialized Oncology & Cellular Therapy Institute",
+      "transplantServices": [
+        "Bone Marrow / Stem Cell"
+      ],
+      "verificationStatus": "State Health Dept & ICMR Registered",
+      "source": "ICMR Stem Cell Registry / NOTTO Portal",
+      "lastVerifiedAt": "2026-09-24T22:52:00.000Z",
+      "coordinatorName": "Dr. Shalini Rao (BMT Specialist)",
+      "registrationId": "KA-BMT-2023-014",
+      "nottoReferenceUrl": "https://notto.mohfw.gov.in/"
+    },
+    {
+      "id": "tc-5",
+      "hospitalId": 2,
+      "name": "St. Anne's Multi-Organ Transplant Institute",
+      "address": "45 Marine Road, Mumbai",
+      "city": "Mumbai",
+      "district": "Mumbai City",
+      "state": "Maharashtra",
+      "pincode": "400020",
+      "contact": "+91-22-2204-5566",
+      "emergencyDesk": "+91-98200-99887",
+      "officialWebsite": "https://ztccmumbai.org/",
+      "institutionType": "Charitable Tertiary Care Hospital",
+      "transplantServices": [
+        "Kidney",
+        "Liver",
+        "Heart",
+        "Cornea"
+      ],
+      "verificationStatus": "ZTCC Mumbai / ROTTO West Registered",
+      "source": "Zonal Transplant Coordination Committee (ZTCC) Mumbai",
+      "lastVerifiedAt": "2026-10-05T22:52:00.000Z",
+      "coordinatorName": "Mrs. Sujata Mane (ZTCC Hospital Liaison)",
+      "registrationId": "MH-ZTCC-MUM-2022-031",
+      "nottoReferenceUrl": "https://notto.mohfw.gov.in/"
+    },
+    {
+      "id": "tc-6",
+      "hospitalId": 6,
+      "name": "Metro Tissue & Musculoskeletal Reconstruction Unit",
+      "address": "77 Central Avenue, Mumbai",
+      "city": "Mumbai",
+      "district": "Mumbai Suburban",
+      "state": "Maharashtra",
+      "pincode": "400051",
+      "contact": "+91-22-2651-7788",
+      "emergencyDesk": "+91-98190-33445",
+      "officialWebsite": "https://ztccmumbai.org/",
+      "institutionType": "Orthopedic & Trauma Institute",
+      "transplantServices": [
+        "Cornea",
+        "Bone & Tissue Allograft"
+      ],
+      "verificationStatus": "State Health Authority Licensed",
+      "source": "State Directorate of Health Services Maharashtra",
+      "lastVerifiedAt": "2026-09-19T22:52:00.000Z",
+      "coordinatorName": "Dr. Vivek Merchant",
+      "registrationId": "MH-TISSUE-2021-009",
+      "nottoReferenceUrl": "https://notto.mohfw.gov.in/"
+    },
+    {
+      "id": "tc-7",
+      "hospitalId": 5,
+      "name": "Harborview Pediatric Organ Transplant Centre",
+      "address": "19 Beach Road, Chennai",
+      "city": "Chennai",
+      "district": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600001",
+      "contact": "+91-44-2536-1234",
+      "emergencyDesk": "+91-98400-33445",
+      "officialWebsite": "https://transtan.tn.gov.in/",
+      "institutionType": "Pediatric Tertiary Care Hospital",
+      "transplantServices": [
+        "Kidney",
+        "Liver",
+        "Bone Marrow / Stem Cell"
+      ],
+      "verificationStatus": "TRANSTAN (Tamil Nadu) Registered",
+      "source": "Transplant Authority of Tamil Nadu (TRANSTAN)",
+      "lastVerifiedAt": "2026-10-03T22:52:00.000Z",
+      "coordinatorName": "Dr. Meenakshi Sundaram (Pediatric Transplant Desk)",
+      "registrationId": "TN-TRANSTAN-2024-PED02",
+      "nottoReferenceUrl": "https://notto.mohfw.gov.in/"
+    },
+    {
+      "id": "tc-8",
+      "hospitalId": null,
+      "name": "Government Apex Multi-Specialty Transplant Institute Chennai",
+      "address": "OMR Road, Sholinganallur, Chennai",
+      "city": "Chennai",
+      "district": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600119",
+      "contact": "+91-44-2450-9900",
+      "emergencyDesk": "+91-98411-22110",
+      "officialWebsite": "https://transtan.tn.gov.in/",
+      "institutionType": "Government Autonomous Institute",
+      "transplantServices": [
+        "Kidney",
+        "Liver",
+        "Heart",
+        "Lung",
+        "Pancreas",
+        "Cornea"
+      ],
+      "verificationStatus": "TRANSTAN / NOTTO Apex Certified",
+      "source": "TRANSTAN Apex Directory 2026",
+      "lastVerifiedAt": "2026-10-07T22:52:00.000Z",
+      "coordinatorName": "Dr. K. Senthil Nathan (Senior Medical Officer)",
+      "registrationId": "TN-TRANSTAN-APEX-2020-001",
+      "nottoReferenceUrl": "https://notto.mohfw.gov.in/"
+    }
+  ],
+  "radarResources": [
+    {
+      "id": "res-1",
+      "facilityId": 1,
+      "facilityName": "Greenview Multispecialty Hospital",
+      "region": "Bengaluru",
+      "resourceCategory": "Oxygen Supply",
+      "resourceType": "Liquid Medical Oxygen (LMO)",
+      "reportedQuantity": 2.1,
+      "reportedStatus": "Normal",
+      "unit": "kL tank",
+      "capacity": 10,
+      "lastUpdatedAt": "2026-10-09T21:22:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Biomedical Gas Manifold Telemetry"
+    },
+    {
+      "id": "res-2",
+      "facilityId": 1,
+      "facilityName": "Greenview Multispecialty Hospital",
+      "region": "Bengaluru",
+      "resourceCategory": "Oxygen Supply",
+      "resourceType": "D-Type High Pressure Cylinders",
+      "reportedQuantity": 42,
+      "reportedStatus": "Normal",
+      "unit": "Cylinders",
+      "capacity": 60,
+      "lastUpdatedAt": "2026-10-09T21:22:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Daily Gas Stock Tally"
+    },
+    {
+      "id": "res-3",
+      "facilityId": 1,
+      "facilityName": "Greenview Multispecialty Hospital",
+      "region": "Bengaluru",
+      "resourceCategory": "Critical Medical Equipment",
+      "resourceType": "ICU Ventilators",
+      "reportedQuantity": 1,
+      "totalReported": 6,
+      "operationalQuantity": 6,
+      "reportedStatus": "Low",
+      "unit": "Units",
+      "lastUpdatedAt": "2026-10-09T21:22:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Biomedical Engineering Log"
+    },
+    {
+      "id": "res-4",
+      "facilityId": 1,
+      "facilityName": "Greenview Multispecialty Hospital",
+      "region": "Bengaluru",
+      "resourceCategory": "Critical Medical Equipment",
+      "resourceType": "High-End Patient Monitors",
+      "reportedQuantity": 5,
+      "totalReported": 18,
+      "operationalQuantity": 18,
+      "reportedStatus": "Normal",
+      "unit": "Units",
+      "lastUpdatedAt": "2026-10-09T21:22:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Biomedical Engineering Log"
+    },
+    {
+      "id": "res-5",
+      "facilityId": 1,
+      "facilityName": "Greenview Multispecialty Hospital",
+      "region": "Bengaluru",
+      "resourceCategory": "Critical Medical Equipment",
+      "resourceType": "BiPAP / High-Flow Nasal Cannula (HFNC)",
+      "reportedQuantity": 3,
+      "totalReported": 8,
+      "operationalQuantity": 8,
+      "reportedStatus": "Normal",
+      "unit": "Units",
+      "lastUpdatedAt": "2026-10-09T21:22:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Biomedical Engineering Log"
+    },
+    {
+      "id": "res-6",
+      "facilityId": 4,
+      "facilityName": "Lakeside General Hospital",
+      "region": "Bengaluru",
+      "resourceCategory": "Oxygen Supply",
+      "resourceType": "Liquid Medical Oxygen (LMO)",
+      "reportedQuantity": 6.8,
+      "reportedStatus": "Normal",
+      "unit": "kL tank",
+      "capacity": 8,
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Bulk Tank Level Indicator"
+    },
+    {
+      "id": "res-7",
+      "facilityId": 4,
+      "facilityName": "Lakeside General Hospital",
+      "region": "Bengaluru",
+      "resourceCategory": "Critical Medical Equipment",
+      "resourceType": "ICU Ventilators",
+      "reportedQuantity": 4,
+      "totalReported": 8,
+      "operationalQuantity": 8,
+      "reportedStatus": "Normal",
+      "unit": "Units",
+      "lastUpdatedAt": "2026-10-09T22:04:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Biomedical Engineering Log"
+    },
+    {
+      "id": "res-8",
+      "facilityId": 2,
+      "facilityName": "St. Anne's Care Centre",
+      "region": "Mumbai",
+      "resourceCategory": "Oxygen Supply",
+      "resourceType": "Liquid Medical Oxygen (LMO)",
+      "reportedQuantity": 1.2,
+      "reportedStatus": "Low",
+      "unit": "kL tank",
+      "capacity": 6,
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Manifold Telemetry Alert"
+    },
+    {
+      "id": "res-9",
+      "facilityId": 2,
+      "facilityName": "St. Anne's Care Centre",
+      "region": "Mumbai",
+      "resourceCategory": "Critical Medical Equipment",
+      "resourceType": "ICU Ventilators",
+      "reportedQuantity": 1,
+      "totalReported": 5,
+      "operationalQuantity": 5,
+      "reportedStatus": "Low",
+      "unit": "Units",
+      "lastUpdatedAt": "2026-10-09T21:40:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "ICU Charge Nurse Roster"
+    },
+    {
+      "id": "res-10",
+      "facilityId": 6,
+      "facilityName": "Metro Orthopedic & Trauma Centre",
+      "region": "Mumbai",
+      "resourceCategory": "Oxygen Supply",
+      "resourceType": "Liquid Medical Oxygen (LMO)",
+      "reportedQuantity": 5.5,
+      "reportedStatus": "Normal",
+      "unit": "kL tank",
+      "capacity": 7,
+      "lastUpdatedAt": "2026-10-09T20:46:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Gas Plant Operator"
+    },
+    {
+      "id": "res-11",
+      "facilityId": 6,
+      "facilityName": "Metro Orthopedic & Trauma Centre",
+      "region": "Mumbai",
+      "resourceCategory": "Critical Medical Equipment",
+      "resourceType": "ICU Ventilators",
+      "reportedQuantity": 3,
+      "totalReported": 6,
+      "operationalQuantity": 6,
+      "reportedStatus": "Normal",
+      "unit": "Units",
+      "lastUpdatedAt": "2026-10-09T20:46:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Equipment Register"
+    },
+    {
+      "id": "res-12",
+      "facilityId": 3,
+      "facilityName": "Sunrise Institute of Medical Sciences",
+      "region": "Delhi",
+      "resourceCategory": "Oxygen Supply",
+      "resourceType": "Liquid Medical Oxygen (LMO)",
+      "reportedQuantity": 8.5,
+      "reportedStatus": "Normal",
+      "unit": "kL tank",
+      "capacity": 12,
+      "lastUpdatedAt": "2026-10-09T21:46:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Automated LMO Sensor"
+    },
+    {
+      "id": "res-13",
+      "facilityId": 3,
+      "facilityName": "Sunrise Institute of Medical Sciences",
+      "region": "Delhi",
+      "resourceCategory": "Critical Medical Equipment",
+      "resourceType": "ICU Ventilators",
+      "reportedQuantity": 2,
+      "totalReported": 14,
+      "operationalQuantity": 14,
+      "reportedStatus": "Normal",
+      "unit": "Units",
+      "lastUpdatedAt": "2026-10-09T21:46:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Critical Care Division"
+    },
+    {
+      "id": "res-14",
+      "facilityId": 7,
+      "facilityName": "Riverside Cardiac Institute",
+      "region": "Delhi",
+      "resourceCategory": "Oxygen Supply",
+      "resourceType": "Liquid Medical Oxygen (LMO)",
+      "reportedQuantity": 7.2,
+      "reportedStatus": "Normal",
+      "unit": "kL tank",
+      "capacity": 10,
+      "lastUpdatedAt": "2026-10-09T11:52:00.000Z",
+      "verificationStatus": "Reported",
+      "source": "Morning Facilities Dispatch"
+    },
+    {
+      "id": "res-15",
+      "facilityId": 5,
+      "facilityName": "Harborview Children's Hospital",
+      "region": "Chennai",
+      "resourceCategory": "Oxygen Supply",
+      "resourceType": "Liquid Medical Oxygen (LMO)",
+      "reportedQuantity": 4.8,
+      "reportedStatus": "Normal",
+      "unit": "kL tank",
+      "capacity": 6,
+      "lastUpdatedAt": "2026-10-09T21:10:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "Gas Room Supervisor"
+    },
+    {
+      "id": "res-16",
+      "facilityId": 5,
+      "facilityName": "Harborview Children's Hospital",
+      "region": "Chennai",
+      "resourceCategory": "Critical Medical Equipment",
+      "resourceType": "ICU Ventilators",
+      "reportedQuantity": 3,
+      "totalReported": 6,
+      "operationalQuantity": 6,
+      "reportedStatus": "Normal",
+      "unit": "Units",
+      "lastUpdatedAt": "2026-10-09T21:10:00.000Z",
+      "verificationStatus": "Verified",
+      "source": "PICU Inventory"
+    },
+    {
+      "id": "res-17",
+      "facilityId": 8,
+      "facilityName": "Everwell Women & Maternity Hospital",
+      "region": "Chennai",
+      "resourceCategory": "Oxygen Supply",
+      "resourceType": "D-Type High Pressure Cylinders",
+      "reportedQuantity": 12,
+      "reportedStatus": "Normal",
+      "unit": "Cylinders",
+      "capacity": 25,
+      "lastUpdatedAt": "2026-10-07T22:52:00.000Z",
+      "verificationStatus": "Needs Confirmation",
+      "source": "Manual Shift Register"
+    }
+  ],
+  "radarAlerts": [
+    {
+      "id": "alt-1",
+      "category": "Blood & Components",
+      "resourceType": "O- Packed Red Blood Cells (PRBC)",
+      "facilityId": 1,
+      "facilityName": "Greenview Multispecialty Hospital",
+      "region": "Bengaluru",
+      "severity": "Critical Reported Shortage",
+      "rule": "Blood bank reported O- PRBC units <= 1 within last 2 hours (Configured threshold: 4 units)",
+      "reportedValue": "1 unit remaining",
+      "source": "Direct Facility Telemetry (Blood Centre)",
+      "freshnessState": "Fresh (<2h)",
+      "status": "Acknowledged",
+      "createdAt": "2026-10-09T21:22:00.000Z",
+      "acknowledgedAt": "2026-10-09T17:33:50.418Z",
+      "acknowledgedBy": "Regional Coordinator Desk",
+      "resolvedAt": null,
+      "resolvedBy": null,
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:33:50.418Z",
+          "author": "Regional Coordinator Desk",
+          "note": "Unit contacted by coordinator; replenishment pending"
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityName": "Lakeside Rotary Blood Centre (bb-2)",
+          "region": "Bengaluru",
+          "reportedSurplus": "9 units verified",
+          "freshness": "Fresh (<1h)",
+          "contactPhone": "+91-80-2520-3344",
+          "suggestion": "Lakeside Rotary reports 9 verified units of O- PRBC. Recommend coordinator call desk at +91-80-2520-3344 to confirm emergency transfer feasibility."
+        },
+        {
+          "facilityName": "Red Cross Central Blood Bank (bb-3)",
+          "region": "Bengaluru",
+          "reportedSurplus": "3 units (Aging report 6h ago)",
+          "freshness": "Aging (6h ago)",
+          "contactPhone": "+91-80-2226-8435",
+          "suggestion": "Red Cross reported 3 units earlier today. Re-confirmation required before dispatch."
+        }
+      ]
+    },
+    {
+      "id": "alt-2",
+      "category": "Hospital Beds",
+      "resourceType": "ICU Bed Availability",
+      "facilityId": 8,
+      "facilityName": "Everwell Women & Maternity Hospital",
+      "region": "Chennai",
+      "severity": "Critical Reported Shortage",
+      "rule": "Zero ICU beds available reported across facility inventory (0 / 2 total)",
+      "reportedValue": "0 beds available",
+      "source": "MedStay Bed Inventory Sync",
+      "freshnessState": "Fresh",
+      "status": "Active",
+      "createdAt": "2026-10-09T19:52:00.000Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": null,
+      "resolvedBy": null,
+      "coordinationNotes": [],
+      "suggestedAlternatives": [
+        {
+          "facilityName": "Harborview Children's Hospital",
+          "region": "Chennai",
+          "reportedSurplus": "2 ICU beds available",
+          "freshness": "Active MedStay Bed Record",
+          "contactPhone": "+91-44-2536-1234",
+          "suggestion": "Harborview has 2 ICU beds listed in Chennai. Contact admitting officer for adult/pediatric eligibility review."
+        }
+      ]
+    },
+    {
+      "id": "alt-3",
+      "category": "Oxygen Supply",
+      "resourceType": "Liquid Medical Oxygen (LMO)",
+      "facilityId": 2,
+      "facilityName": "St. Anne's Care Centre",
+      "region": "Mumbai",
+      "severity": "Attention Required",
+      "rule": "Facility explicitly reported Low oxygen status (Tank level: 1.2 kL / 6 kL capacity)",
+      "reportedValue": "1.2 kL (Low status)",
+      "source": "Manifold Telemetry Alert",
+      "freshnessState": "Fresh (<2h)",
+      "status": "Acknowledged",
+      "createdAt": "2026-10-09T20:22:00.000Z",
+      "acknowledgedAt": "2026-10-09T21:52:00.000Z",
+      "acknowledgedBy": "Coordinator Desk (u-demo-a)",
+      "resolvedAt": null,
+      "resolvedBy": null,
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T21:52:00.000Z",
+          "author": "Coordinator Desk (u-demo-a)",
+          "note": "Contacted biomedical supplier Inox Air Products. Refill tanker dispatched at 19:30; expected arrival within 3 hours."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityName": "Metro Orthopedic & Trauma Centre",
+          "region": "Mumbai",
+          "reportedSurplus": "5.5 kL LMO (Normal status)",
+          "freshness": "Fresh (2h ago)",
+          "contactPhone": "+91-22-2651-7788",
+          "suggestion": "Metro Orthopedic in Mumbai reports 5.5 kL normal tank level and backup manifold capacity."
+        }
+      ]
+    },
+    {
+      "id": "alt-4",
+      "category": "Blood & Components",
+      "resourceType": "A- Packed Red Blood Cells (PRBC)",
+      "facilityId": 2,
+      "facilityName": "St. Anne's Care Blood & Component Bank",
+      "region": "Mumbai",
+      "severity": "Critical Reported Shortage",
+      "rule": "Blood bank reported 1 unit(s) of A- Packed Red Blood Cells (PRBC) (Configured minimum: 1 units).",
+      "reportedValue": "1 unit(s) remaining",
+      "source": "Hospital Transfusion LIS",
+      "freshnessState": "Recently Confirmed",
+      "status": "Active",
+      "createdAt": "2026-10-09T21:40:00.000Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": null,
+      "resolvedBy": null,
+      "coordinationNotes": [],
+      "suggestedAlternatives": [
+        {
+          "facilityName": "Lions Metropolitan Blood Centre (bb-6)",
+          "region": "Mumbai",
+          "reportedSurplus": "7 units verified",
+          "freshness": "Fresh (<2h)",
+          "contactPhone": "+91-22-2430-1122",
+          "suggestion": "Lions Metropolitan in Dadar reports 7 units of A- PRBC. Recommend coordinator check requisition protocol."
+        }
+      ]
+    },
+    {
+      "id": "alt-5",
+      "category": "Blood & Components",
+      "resourceType": "B- Packed Red Blood Cells (PRBC)",
+      "facilityId": 3,
+      "facilityName": "Sunrise Regional Transfusion Centre",
+      "region": "Delhi",
+      "severity": "Critical Reported Shortage",
+      "rule": "Blood bank reported 1 unit(s) of B- Packed Red Blood Cells (PRBC) (Configured minimum: 1 units).",
+      "reportedValue": "1 unit(s) remaining",
+      "source": "Sunrise Central Blood Lab",
+      "freshnessState": "Recently Confirmed",
+      "status": "Active",
+      "createdAt": "2026-10-09T21:46:00.000Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": null,
+      "resolvedBy": null,
+      "coordinationNotes": [],
+      "suggestedAlternatives": [
+        {
+          "facilityName": "Riverside Cardiac Transfusion Unit (bb-8)",
+          "region": "Delhi",
+          "reportedSurplus": "6 units reported",
+          "freshness": "Aging (11h ago)",
+          "contactPhone": "+91-11-2327-8899",
+          "suggestion": "Riverside Cardiac has 6 reported units of B- PRBC in Central Delhi. Recommend calling to confirm current availability."
+        }
+      ]
+    },
+    {
+      "id": "alt-6",
+      "category": "Critical Medical Equipment",
+      "resourceType": "ICU Ventilators",
+      "facilityId": 1,
+      "facilityName": "Greenview Multispecialty Hospital",
+      "region": "Bengaluru",
+      "severity": "Attention Required",
+      "rule": "Available ICU Ventilators <= 1 unit (Available: 1 / 6 total)",
+      "reportedValue": "1 available / 6 total",
+      "source": "Biomedical Engineering Log",
+      "freshnessState": "Fresh (<2h)",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T21:22:00.000Z",
+      "acknowledgedAt": "2026-10-09T17:40:48.578Z",
+      "acknowledgedBy": "Regional Coordinator Desk",
+      "resolvedAt": "2026-10-09T17:40:48.601Z",
+      "resolvedBy": "Regional Coordinator Desk",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:40:48.578Z",
+          "author": "Regional Coordinator Desk",
+          "note": "Supervisor confirmed liaison call initiated"
+        },
+        {
+          "timestamp": "2026-10-09T17:40:48.590Z",
+          "author": "Regional Coordinator Desk",
+          "note": "Transfer ambulance en route with 2 units PRBC"
+        },
+        {
+          "timestamp": "2026-10-09T17:40:48.601Z",
+          "author": "Regional Coordinator Desk",
+          "note": "RESOLVED: Units received and confirmed in emergency blood bank"
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityName": "Lakeside General Hospital",
+          "region": "Bengaluru",
+          "reportedSurplus": "4 ICU Ventilators available",
+          "freshness": "Fresh (<1h)",
+          "contactPhone": "+91-80-2520-3344",
+          "suggestion": "Lakeside General reports 4 available ventilators in Bengaluru. Contact biomedical coordinator."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8d-r8yt",
+      "category": "Blood & Components",
+      "resourceType": "O- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-1",
+      "facilityName": "Greenview Transfusion Medicine & Blood Centre",
+      "region": "Bengaluru",
+      "severity": "Critical Reported Shortage",
+      "rule": "Blood bank reported 1 unit(s) of O- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "1 unit(s) remaining",
+      "source": "Direct Facility Sync",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.413Z",
+      "acknowledgedAt": "2026-10-09T17:41:32.119Z",
+      "acknowledgedBy": "Regional Coordinator Desk",
+      "resolvedAt": "2026-10-09T17:41:32.144Z",
+      "resolvedBy": "Regional Coordinator Desk",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:41:32.119Z",
+          "author": "Regional Coordinator Desk",
+          "note": "Supervisor confirmed liaison call initiated"
+        },
+        {
+          "timestamp": "2026-10-09T17:41:32.131Z",
+          "author": "Regional Coordinator Desk",
+          "note": "Transfer ambulance en route with 2 units PRBC"
+        },
+        {
+          "timestamp": "2026-10-09T17:41:32.144Z",
+          "author": "Regional Coordinator Desk",
+          "note": "RESOLVED: Units received and confirmed in emergency blood bank"
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-2",
+          "facilityName": "Lakeside Rotary Blood Centre",
+          "region": "Bengaluru",
+          "address": "8 Lake View, Bengaluru",
+          "contactPhone": "+91-98450-44556",
+          "reportedSurplus": "9 units (O- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Lakeside Rotary Blood Centre in Bengaluru reports 9 verified units (Updated just now). Suggest coordinator call +91-98450-44556 to confirm emergency transfer feasibility."
+        },
+        {
+          "facilityId": "bb-3",
+          "facilityName": "Red Cross Central Blood Bank Bengaluru",
+          "region": "Bengaluru",
+          "address": "26 Race Course Road, Bengaluru",
+          "contactPhone": "+91-94480-77665",
+          "reportedSurplus": "3 units (O- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated 42m ago",
+          "suggestion": "Red Cross Central Blood Bank Bengaluru in Bengaluru reports 3 verified units (Updated 42m ago). Suggest coordinator call +91-94480-77665 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8d-01ar",
+      "category": "Blood & Components",
+      "resourceType": "A- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-1",
+      "facilityName": "Greenview Transfusion Medicine & Blood Centre",
+      "region": "Bengaluru",
+      "severity": "Critical Reported Shortage",
+      "rule": "Blood bank reported 2 unit(s) of A- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "2 unit(s) remaining",
+      "source": "Direct Facility Sync",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.413Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.982Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.982Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 2 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-2",
+          "facilityName": "Lakeside Rotary Blood Centre",
+          "region": "Bengaluru",
+          "address": "8 Lake View, Bengaluru",
+          "contactPhone": "+91-98450-44556",
+          "reportedSurplus": "6 units (A- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Lakeside Rotary Blood Centre in Bengaluru reports 6 verified units (Updated just now). Suggest coordinator call +91-98450-44556 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8d-1djr",
+      "category": "Blood & Components",
+      "resourceType": "B- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-1",
+      "facilityName": "Greenview Transfusion Medicine & Blood Centre",
+      "region": "Bengaluru",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 3 unit(s) of B- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "3 unit(s) remaining",
+      "source": "Direct Facility Sync",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.413Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.982Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.982Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 3 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-2",
+          "facilityName": "Lakeside Rotary Blood Centre",
+          "region": "Bengaluru",
+          "address": "8 Lake View, Bengaluru",
+          "contactPhone": "+91-98450-44556",
+          "reportedSurplus": "7 units (B- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Lakeside Rotary Blood Centre in Bengaluru reports 7 verified units (Updated just now). Suggest coordinator call +91-98450-44556 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8e-bp5m",
+      "category": "Blood & Components",
+      "resourceType": "AB- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-1",
+      "facilityName": "Greenview Transfusion Medicine & Blood Centre",
+      "region": "Bengaluru",
+      "severity": "Critical Reported Shortage",
+      "rule": "Blood bank reported 0 unit(s) of AB- Packed Red Blood Cells (PRBC) (Configured minimum: 1 units).",
+      "reportedValue": "0 unit(s) remaining",
+      "source": "Direct Facility Sync",
+      "freshnessState": "Recently Confirmed",
+      "status": "Active",
+      "createdAt": "2026-10-09T17:33:50.414Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": null,
+      "resolvedBy": null,
+      "coordinationNotes": [],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-2",
+          "facilityName": "Lakeside Rotary Blood Centre",
+          "region": "Bengaluru",
+          "address": "8 Lake View, Bengaluru",
+          "contactPhone": "+91-98450-44556",
+          "reportedSurplus": "4 units (AB- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Lakeside Rotary Blood Centre in Bengaluru reports 4 verified units (Updated just now). Suggest coordinator call +91-98450-44556 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8e-128j",
+      "category": "Blood & Components",
+      "resourceType": "B+ Platelets",
+      "facilityId": "bb-1",
+      "facilityName": "Greenview Transfusion Medicine & Blood Centre",
+      "region": "Bengaluru",
+      "severity": "Critical Reported Shortage",
+      "rule": "Blood bank reported 2 unit(s) of B+ Platelets (Configured minimum: 5 units).",
+      "reportedValue": "2 unit(s) remaining",
+      "source": "Direct Facility Sync",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.414Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.982Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.982Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 2 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-2",
+          "facilityName": "Lakeside Rotary Blood Centre",
+          "region": "Bengaluru",
+          "address": "8 Lake View, Bengaluru",
+          "contactPhone": "+91-98450-44556",
+          "reportedSurplus": "8 units (B+ Platelets)",
+          "freshness": "Updated just now",
+          "suggestion": "Lakeside Rotary Blood Centre in Bengaluru reports 8 verified units (Updated just now). Suggest coordinator call +91-98450-44556 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8e-a1xu",
+      "category": "Blood & Components",
+      "resourceType": "AB- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-2",
+      "facilityName": "Lakeside Rotary Blood Centre",
+      "region": "Bengaluru",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 4 unit(s) of AB- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "4 unit(s) remaining",
+      "source": "Rotary Blood Council Sync",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.414Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.982Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.982Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 4 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": []
+    },
+    {
+      "id": "alt-mv18ve8e-hog8",
+      "category": "Blood & Components",
+      "resourceType": "O- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-3",
+      "facilityName": "Red Cross Central Blood Bank Bengaluru",
+      "region": "Bengaluru",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 3 unit(s) of O- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "3 unit(s) remaining",
+      "source": "Red Cross State Portal",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.414Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.982Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.982Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 3 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-2",
+          "facilityName": "Lakeside Rotary Blood Centre",
+          "region": "Bengaluru",
+          "address": "8 Lake View, Bengaluru",
+          "contactPhone": "+91-98450-44556",
+          "reportedSurplus": "9 units (O- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Lakeside Rotary Blood Centre in Bengaluru reports 9 verified units (Updated just now). Suggest coordinator call +91-98450-44556 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8e-yqm1",
+      "category": "Blood & Components",
+      "resourceType": "B- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-4",
+      "facilityName": "St. Anne's Care Blood & Component Bank",
+      "region": "Mumbai",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 4 unit(s) of B- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "4 unit(s) remaining",
+      "source": "Hospital Transfusion LIS",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.414Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.982Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.982Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 4 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": []
+    },
+    {
+      "id": "alt-mv18ve8e-3wtl",
+      "category": "Blood & Components",
+      "resourceType": "B+ Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-5",
+      "facilityName": "Metro Central Trauma Blood Bank",
+      "region": "Mumbai",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 4 units of B+ Packed Red Blood Cells (PRBC). NOTICE: Data is older than 24h. Re-verification required.",
+      "reportedValue": "4 unit(s) remaining",
+      "source": "Legacy e-RaktKosh Batch Sync",
+      "freshnessState": "Data Stale",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.414Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.982Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.982Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 4 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-4",
+          "facilityName": "St. Anne's Care Blood & Component Bank",
+          "region": "Mumbai",
+          "address": "45 Marine Road, Mumbai",
+          "contactPhone": "+91-98200-99887",
+          "reportedSurplus": "16 units (B+ Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "St. Anne's Care Blood & Component Bank in Mumbai reports 16 verified units (Updated just now). Suggest coordinator call +91-98200-99887 to confirm emergency transfer feasibility."
+        },
+        {
+          "facilityId": "bb-6",
+          "facilityName": "Lions Metropolitan Blood Centre Mumbai",
+          "region": "Mumbai",
+          "address": "102 Dadar West, Mumbai",
+          "contactPhone": "+91-98211-66778",
+          "reportedSurplus": "14 units (B+ Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Lions Metropolitan Blood Centre Mumbai in Mumbai reports 14 verified units (Updated just now). Suggest coordinator call +91-98211-66778 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8e-gslz",
+      "category": "Blood & Components",
+      "resourceType": "A+ Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-5",
+      "facilityName": "Metro Central Trauma Blood Bank",
+      "region": "Mumbai",
+      "severity": "Critical Reported Shortage",
+      "rule": "Blood bank reported 2 units of A+ Packed Red Blood Cells (PRBC). NOTICE: Data is older than 24h. Re-verification required.",
+      "reportedValue": "2 unit(s) remaining",
+      "source": "Legacy e-RaktKosh Batch Sync",
+      "freshnessState": "Data Stale",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.414Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.982Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.982Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 2 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-4",
+          "facilityName": "St. Anne's Care Blood & Component Bank",
+          "region": "Mumbai",
+          "address": "45 Marine Road, Mumbai",
+          "contactPhone": "+91-98200-99887",
+          "reportedSurplus": "14 units (A+ Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "St. Anne's Care Blood & Component Bank in Mumbai reports 14 verified units (Updated just now). Suggest coordinator call +91-98200-99887 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8e-ud7u",
+      "category": "Blood & Components",
+      "resourceType": "O- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-5",
+      "facilityName": "Metro Central Trauma Blood Bank",
+      "region": "Mumbai",
+      "severity": "Critical Reported Shortage",
+      "rule": "Blood bank reported 0 units of O- Packed Red Blood Cells (PRBC). NOTICE: Data is older than 24h. Re-verification required.",
+      "reportedValue": "0 unit(s) remaining",
+      "source": "Legacy e-RaktKosh Batch Sync",
+      "freshnessState": "Data Stale",
+      "status": "Active",
+      "createdAt": "2026-10-09T17:33:50.414Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": null,
+      "resolvedBy": null,
+      "coordinationNotes": [],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-4",
+          "facilityName": "St. Anne's Care Blood & Component Bank",
+          "region": "Mumbai",
+          "address": "45 Marine Road, Mumbai",
+          "contactPhone": "+91-98200-99887",
+          "reportedSurplus": "8 units (O- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "St. Anne's Care Blood & Component Bank in Mumbai reports 8 verified units (Updated just now). Suggest coordinator call +91-98200-99887 to confirm emergency transfer feasibility."
+        },
+        {
+          "facilityId": "bb-6",
+          "facilityName": "Lions Metropolitan Blood Centre Mumbai",
+          "region": "Mumbai",
+          "address": "102 Dadar West, Mumbai",
+          "contactPhone": "+91-98211-66778",
+          "reportedSurplus": "5 units (O- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Lions Metropolitan Blood Centre Mumbai in Mumbai reports 5 verified units (Updated just now). Suggest coordinator call +91-98211-66778 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8e-adx4",
+      "category": "Blood & Components",
+      "resourceType": "AB- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-6",
+      "facilityName": "Lions Metropolitan Blood Centre Mumbai",
+      "region": "Mumbai",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 3 unit(s) of AB- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "3 unit(s) remaining",
+      "source": "SBTC Maharashtra",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.414Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.983Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.983Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 3 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": []
+    },
+    {
+      "id": "alt-mv18ve8e-i23q",
+      "category": "Blood & Components",
+      "resourceType": "O- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-7",
+      "facilityName": "Sunrise Regional Transfusion Centre",
+      "region": "Delhi",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 4 unit(s) of O- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "4 unit(s) remaining",
+      "source": "Sunrise Central Blood Lab",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.414Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.983Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.983Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 4 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": []
+    },
+    {
+      "id": "alt-mv18ve8e-qnu7",
+      "category": "Blood & Components",
+      "resourceType": "B+ Platelets",
+      "facilityId": "bb-7",
+      "facilityName": "Sunrise Regional Transfusion Centre",
+      "region": "Delhi",
+      "severity": "Critical Reported Shortage",
+      "rule": "Blood bank reported 1 unit(s) of B+ Platelets (Configured minimum: 1 units).",
+      "reportedValue": "1 unit(s) remaining",
+      "source": "Sunrise Central Blood Lab",
+      "freshnessState": "Recently Confirmed",
+      "status": "Active",
+      "createdAt": "2026-10-09T17:33:50.414Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": null,
+      "resolvedBy": null,
+      "coordinationNotes": [],
+      "suggestedAlternatives": []
+    },
+    {
+      "id": "alt-mv18ve8f-myw0",
+      "category": "Blood & Components",
+      "resourceType": "A+ Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-9",
+      "facilityName": "Capital Charitable Blood Trust",
+      "region": "Delhi",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 4 unit(s) of A+ Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "4 unit(s) remaining",
+      "source": "Community Volunteer Desk",
+      "freshnessState": "Reported Availability",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.415Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.983Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.983Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 4 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-7",
+          "facilityName": "Sunrise Regional Transfusion Centre",
+          "region": "Delhi",
+          "address": "88 Ring Road, Delhi",
+          "contactPhone": "+91-98110-55667",
+          "reportedSurplus": "12 units (A+ Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Sunrise Regional Transfusion Centre in Delhi reports 12 verified units (Updated just now). Suggest coordinator call +91-98110-55667 to confirm emergency transfer feasibility."
+        },
+        {
+          "facilityId": "bb-8",
+          "facilityName": "Riverside Cardiac Transfusion Unit",
+          "region": "Delhi",
+          "address": "4 Riverside Drive, Delhi",
+          "contactPhone": "+91-98101-11223",
+          "reportedSurplus": "9 units (A+ Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated 6h ago (Aging)",
+          "suggestion": "Riverside Cardiac Transfusion Unit in Delhi reports 9 verified units (Updated 6h ago (Aging)). Suggest coordinator call +91-98101-11223 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8f-jei8",
+      "category": "Blood & Components",
+      "resourceType": "O- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-10",
+      "facilityName": "Harborview Pediatric Blood & Platelet Centre",
+      "region": "Chennai",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 4 unit(s) of O- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "4 unit(s) remaining",
+      "source": "Tamil Nadu State Transfusion Council",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.415Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.983Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.983Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 4 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-12",
+          "facilityName": "Jeevan Blood Bank & Transfusion Centre",
+          "region": "Chennai",
+          "address": "22 Marshalls Road, Egmore, Chennai",
+          "contactPhone": "+91-98410-88990",
+          "reportedSurplus": "7 units (O- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Jeevan Blood Bank & Transfusion Centre in Chennai reports 7 verified units (Updated just now). Suggest coordinator call +91-98410-88990 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv18ve8f-9lsb",
+      "category": "Blood & Components",
+      "resourceType": "B- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-12",
+      "facilityName": "Jeevan Blood Bank & Transfusion Centre",
+      "region": "Chennai",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 4 unit(s) of B- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "4 unit(s) remaining",
+      "source": "Jeevan Real-time LIS",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.415Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.983Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.983Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 4 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": []
+    },
+    {
+      "id": "alt-mv18ve8f-6ysj",
+      "category": "Blood & Components",
+      "resourceType": "AB- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-12",
+      "facilityName": "Jeevan Blood Bank & Transfusion Centre",
+      "region": "Chennai",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 3 unit(s) of AB- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "3 unit(s) remaining",
+      "source": "Jeevan Real-time LIS",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:33:50.415Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.983Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.983Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 3 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": []
+    },
+    {
+      "id": "alt-mv194cyk-p0if",
+      "category": "Blood & Components",
+      "resourceType": "B+ Whole Blood",
+      "facilityId": "bb-1",
+      "facilityName": "Greenview Transfusion Medicine & Blood Centre",
+      "region": "Bengaluru",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 5 unit(s) of B+ Whole Blood (Configured minimum: 5 units).",
+      "reportedValue": "5 unit(s) remaining",
+      "source": "Direct Facility Sync",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:40:48.668Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.982Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.982Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 5 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": []
+    },
+    {
+      "id": "alt-mv194cyk-tcqo",
+      "category": "Blood & Components",
+      "resourceType": "O+ Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-5",
+      "facilityName": "Metro Central Trauma Blood Bank",
+      "region": "Mumbai",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 5 units of O+ Packed Red Blood Cells (PRBC). NOTICE: Data is older than 24h. Re-verification required.",
+      "reportedValue": "5 unit(s) remaining",
+      "source": "Legacy e-RaktKosh Batch Sync",
+      "freshnessState": "Data Stale",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:40:48.668Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.982Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.982Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 5 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-4",
+          "facilityName": "St. Anne's Care Blood & Component Bank",
+          "region": "Mumbai",
+          "address": "45 Marine Road, Mumbai",
+          "contactPhone": "+91-98200-99887",
+          "reportedSurplus": "19 units (O+ Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "St. Anne's Care Blood & Component Bank in Mumbai reports 19 verified units (Updated just now). Suggest coordinator call +91-98200-99887 to confirm emergency transfer feasibility."
+        },
+        {
+          "facilityId": "bb-6",
+          "facilityName": "Lions Metropolitan Blood Centre Mumbai",
+          "region": "Mumbai",
+          "address": "102 Dadar West, Mumbai",
+          "contactPhone": "+91-98211-66778",
+          "reportedSurplus": "21 units (O+ Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Lions Metropolitan Blood Centre Mumbai in Mumbai reports 21 verified units (Updated just now). Suggest coordinator call +91-98211-66778 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv194cyl-gdhj",
+      "category": "Blood & Components",
+      "resourceType": "O- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-6",
+      "facilityName": "Lions Metropolitan Blood Centre Mumbai",
+      "region": "Mumbai",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 5 unit(s) of O- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "5 unit(s) remaining",
+      "source": "SBTC Maharashtra",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:40:48.669Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.982Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.982Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 5 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-4",
+          "facilityName": "St. Anne's Care Blood & Component Bank",
+          "region": "Mumbai",
+          "address": "45 Marine Road, Mumbai",
+          "contactPhone": "+91-98200-99887",
+          "reportedSurplus": "8 units (O- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "St. Anne's Care Blood & Component Bank in Mumbai reports 8 verified units (Updated just now). Suggest coordinator call +91-98200-99887 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv194cyl-1n2p",
+      "category": "Blood & Components",
+      "resourceType": "A- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-7",
+      "facilityName": "Sunrise Regional Transfusion Centre",
+      "region": "Delhi",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 5 unit(s) of A- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "5 unit(s) remaining",
+      "source": "Sunrise Central Blood Lab",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:40:48.669Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.983Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.983Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 5 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": []
+    },
+    {
+      "id": "alt-mv194cyl-wuey",
+      "category": "Blood & Components",
+      "resourceType": "B+ Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-11",
+      "facilityName": "Everwell Women Blood Support Unit",
+      "region": "Chennai",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 5 units of B+ Packed Red Blood Cells (PRBC). NOTICE: Data is older than 24h. Re-verification required.",
+      "reportedValue": "5 unit(s) remaining",
+      "source": "Hospital Manual Log",
+      "freshnessState": "Data Stale",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:40:48.669Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.983Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.983Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 5 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-10",
+          "facilityName": "Harborview Pediatric Blood & Platelet Centre",
+          "region": "Chennai",
+          "address": "19 Beach Road, Chennai",
+          "contactPhone": "+91-98400-33445",
+          "reportedSurplus": "13 units (B+ Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Harborview Pediatric Blood & Platelet Centre in Chennai reports 13 verified units (Updated just now). Suggest coordinator call +91-98400-33445 to confirm emergency transfer feasibility."
+        },
+        {
+          "facilityId": "bb-12",
+          "facilityName": "Jeevan Blood Bank & Transfusion Centre",
+          "region": "Chennai",
+          "address": "22 Marshalls Road, Egmore, Chennai",
+          "contactPhone": "+91-98410-88990",
+          "reportedSurplus": "21 units (B+ Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Jeevan Blood Bank & Transfusion Centre in Chennai reports 21 verified units (Updated just now). Suggest coordinator call +91-98410-88990 to confirm emergency transfer feasibility."
+        }
+      ]
+    },
+    {
+      "id": "alt-mv194cyl-8ozf",
+      "category": "Blood & Components",
+      "resourceType": "A- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-12",
+      "facilityName": "Jeevan Blood Bank & Transfusion Centre",
+      "region": "Chennai",
+      "severity": "Attention Required",
+      "rule": "Blood bank reported 5 unit(s) of A- Packed Red Blood Cells (PRBC) (Configured minimum: 5 units).",
+      "reportedValue": "5 unit(s) remaining",
+      "source": "Jeevan Real-time LIS",
+      "freshnessState": "Recently Confirmed",
+      "status": "Resolved",
+      "createdAt": "2026-10-09T17:40:48.669Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": "2026-10-09T17:55:44.983Z",
+      "resolvedBy": "System Auto-Resolution",
+      "coordinationNotes": [
+        {
+          "timestamp": "2026-10-09T17:55:44.983Z",
+          "author": "System Sensor Sync",
+          "note": "Inventory replenished to 5 units. Shortage alert closed."
+        }
+      ],
+      "suggestedAlternatives": []
+    },
+    {
+      "id": "alt-mv195ajf-md38",
+      "category": "Blood & Components",
+      "resourceType": "O- Packed Red Blood Cells (PRBC)",
+      "facilityId": "bb-1",
+      "facilityName": "Greenview Transfusion Medicine & Blood Centre",
+      "region": "Bengaluru",
+      "severity": "Critical Reported Shortage",
+      "rule": "Blood bank reported 1 unit(s) of O- Packed Red Blood Cells (PRBC) (Configured minimum: 1 units).",
+      "reportedValue": "1 unit(s) remaining",
+      "source": "Direct Facility Sync",
+      "freshnessState": "Recently Confirmed",
+      "status": "Active",
+      "createdAt": "2026-10-09T17:41:32.187Z",
+      "acknowledgedAt": null,
+      "acknowledgedBy": null,
+      "resolvedAt": null,
+      "resolvedBy": null,
+      "coordinationNotes": [],
+      "suggestedAlternatives": [
+        {
+          "facilityId": "bb-2",
+          "facilityName": "Lakeside Rotary Blood Centre",
+          "region": "Bengaluru",
+          "address": "8 Lake View, Bengaluru",
+          "contactPhone": "+91-98450-44556",
+          "reportedSurplus": "9 units (O- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated just now",
+          "suggestion": "Lakeside Rotary Blood Centre in Bengaluru reports 9 verified units (Updated just now). Suggest coordinator call +91-98450-44556 to confirm emergency transfer feasibility."
+        },
+        {
+          "facilityId": "bb-3",
+          "facilityName": "Red Cross Central Blood Bank Bengaluru",
+          "region": "Bengaluru",
+          "address": "26 Race Course Road, Bengaluru",
+          "contactPhone": "+91-94480-77665",
+          "reportedSurplus": "3 units (O- Packed Red Blood Cells (PRBC))",
+          "freshness": "Updated 50m ago",
+          "suggestion": "Red Cross Central Blood Bank Bengaluru in Bengaluru reports 3 verified units (Updated 50m ago). Suggest coordinator call +91-94480-77665 to confirm emergency transfer feasibility."
+        }
+      ]
+    }
+  ],
+  "radarThresholds": {
+    "bloodUnitsMin": 1,
+    "icuBedsMin": 1,
+    "ventilatorsMin": 2,
+    "oxygenCriticalCategories": [
+      "Low",
+      "Critical"
+    ],
+    "freshThresholdHours": 2,
+    "agingThresholdHours": 24
+  },
+  "lifelineAudit": [
+    {
+      "id": "aud-7dd4d71e",
+      "recordId": "bs-21",
+      "facilityId": "bb-2",
+      "facilityName": "Lakeside Rotary Blood Centre",
+      "bloodGroup": "B-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "oldValue": 14,
+      "newValue": 14,
+      "actorId": "u-demo-p",
+      "actorName": "Demo Patient",
+      "reason": "Physical inventory reconciliation",
+      "timestamp": "2026-10-09T17:41:32.080Z"
+    },
+    {
+      "id": "aud-af4eeb36",
+      "recordId": "bs-21",
+      "facilityId": "bb-2",
+      "facilityName": "Lakeside Rotary Blood Centre",
+      "bloodGroup": "B-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "oldValue": 7,
+      "newValue": 14,
+      "actorId": "u-demo-p",
+      "actorName": "Demo Patient",
+      "reason": "Physical inventory reconciliation",
+      "timestamp": "2026-10-09T17:40:48.536Z"
+    },
+    {
+      "id": "aud-ff8ead72",
+      "recordId": "bs-7",
+      "facilityId": "bb-1",
+      "facilityName": "Greenview Transfusion Medicine & Blood Centre",
+      "bloodGroup": "AB+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "oldValue": 5,
+      "newValue": 6,
+      "actorId": "demo-coordinator",
+      "actorName": "Authorized Demo Coordinator",
+      "reason": "Volunteer walk-in donation registered",
+      "timestamp": "2026-10-09T17:33:50.485Z"
+    },
+    {
+      "id": "aud-1",
+      "recordId": "bs-1",
+      "facilityName": "Greenview Transfusion Medicine & Blood Centre",
+      "bloodGroup": "O-",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "oldValue": 3,
+      "newValue": 1,
+      "actorId": "u-demo-o",
+      "actorName": "Greenview Admin",
+      "reason": "Dispatched 2 units to Emergency OT for acute trauma resuscitation",
+      "timestamp": "2026-10-09T21:22:00.000Z"
+    },
+    {
+      "id": "aud-2",
+      "recordId": "bs-16",
+      "facilityName": "Lakeside Rotary Blood Centre",
+      "bloodGroup": "O+",
+      "component": "Packed Red Blood Cells (PRBC)",
+      "oldValue": 18,
+      "newValue": 22,
+      "actorId": "u-demo-a",
+      "actorName": "MedStay Verification Admin",
+      "reason": "Processed batch donation from Rotary Central voluntary camp",
+      "timestamp": "2026-10-09T22:04:00.000Z"
+    }
+  ],
+  "JanvaniFeedback": [
+    {
+      "id": "JV-DEF291AC",
+      "userId": "u-demo-p",
+      "userName": "Demo Patient",
+      "category": "Complaint",
+      "subject": "icu beds are not sufficient",
+      "message": "the overall issue lies in the bed count of the hospital and thereby the overall integration .",
+      "facilityId": "",
+      "bookingReference": "",
+      "status": "Submitted",
+      "createdAt": "2026-10-10T07:23:51.913Z",
+      "updatedAt": "2026-10-10T07:23:51.913Z",
+      "adminNote": ""
+    }
+  ],
+  "jaanvaniFeedback": []
+}
